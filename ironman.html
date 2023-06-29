@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironman</title>
+    <style>
+      body{
+         background-color: rgb(162, 162, 162);
+         
+      }
+       .lightning {margin: 0;
+			padding: 0;
+        position:fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/suitup.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+        z-index: 9999;
+      }
+      img{
+        position: relative;
+        left: 170px;
+      }
+    </style>
+</head>
+<body>
+   <button onclick="showLightning()" ><b>SUIT UP</b></button>
+    <div id="lightning" class="lightning"></div>
+    <script>
+      function showLightning() {
+        document.getElementById("lightning").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("lightning").style.display = "none";
+        },3500);
+      }
+      </script>
+      <br>
+      <div class="container" style="border: 10px solid black; padding: 50px;  width: 400px;height: 200px; position: absolute;right: 150px; bottom: 200px; background-color:rgba(248, 181, 181, 0.768);" >
+         <p>Tony Stark is a billionaire industrialist, genius inventor, and playboy who uses his wealth and intelligence to develop a powered suit of armor to become a superhero known as Iron Man.Iron Man is one of the founding members of the superhero team, the Avengers, and has since become one of the most iconic characters in the Marvel Comics universe. He is known for his high-tech suit, which gives him superhuman strength, flight, and an array of weapons and gadgets. Over the years, Iron Man has faced many enemies, including his own personal demons, and has gone through various personal and physical struggles.</p>
+      </div>
+      <br>
+      <img src="images/ironset.png" alt="" width="300px" >
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captain America</title>
+    <style>
+        body{
+            background-color: darkblue;
+        }
+        .lightning {
+        position:fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/steve.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: none;
+        z-index: 9999;
+      }
+      img{
+        position: relative;
+        top: 60px;
+        left: 150px;
+      }
+    </style>
+</head>
+<body>
+    <button onclick="showLightning()" ><b>Steve</b></button>
+    <div id="lightning" class="lightning"></div>
+    <script>
+      function showLightning() {
+        document.getElementById("lightning").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("lightning").style.display = "none";
+        }, 1000);
+      }
+  
+    </script>
+    <div class="container" style="border: 10px solid black; padding: 50px;  width: 400px;height: 200px; position: absolute;right: 150px; bottom: 200px; background-color:rgba(248, 181, 181, 0.768);">
+        <p>Steve Rogers, and he is a physically fit, highly trained soldier who possesses enhanced strength, agility, and endurance due to a government experiment during World War II. Captain America is known for his patriotic costume, which features the American flag motif, and his signature shield, which he uses both as a defensive weapon and as a projectile. He is a symbol of American patriotism and is often depicted as fighting against evil forces and defending freedom and justice.</p>
+    </div>
+    <br>
+    <img src="images/pngimg.com - captain_america_PNG1.png" alt="no image" width="400px">
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>THOR</title>
+    <style>
+        body{
+          background-color: rgb(1, 1, 85);
+        }
+      .lightning {
+        position:fixed;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/lightning-thunder.gif');
+        background-size: cover;
+        display: none;
+        z-index: 9999;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <button onclick="showLightning()" ><b>GOD OF THUNDER</b></button>
+    <div id="lightning" class="lightning"></div>
+    <script>
+      function showLightning() {
+        document.getElementById("lightning").style.display = "block";
+        setTimeout(function() {
+          document.getElementById("lightning").style.display = "none";
+        }, 200);
+      }
+  
+    </script>
+    <div class="container" style="border: 10px solid black; padding: 50px;  width: 400px;height: 200px; position: absolute;right: 150px; bottom: 200px; background-color:rgba(248, 181, 181, 0.768);" >
+      <p>Thor is the god of thunder and associated with strength, bravery, and the protection of mankind. Thor is often depicted as a muscular man with red hair and beard, wielding a magical hammer called Mjolnir. According to Norse mythology, Thor travels in a chariot pulled by two goats and has a powerful thunderstorm as his weapon. He is also known for his battles with giants and other mythological creatures, and is often regarded as one of the most important and powerful gods in Norse mythology.</p>
+    </div>
+    <div class="bava">
+      <img src="images/thorset.png" alt="" width="650px">
+    </div>
+  </body>
+</html>
